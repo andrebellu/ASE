@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./ap.svg">
+  <meta name="description" content="Search for airports in the world.">
+
+  <title>Airports</title>
+</head>
+
+<body>
+  <div id="app" class="p-3 flex flex-col text-white">
+
+    <div class="title-container">
+      <h1 class="text-6xl flex justify-center">Airports</h1>
+      <i class="material-symbols-outlined text-4xl">connecting_airports</i>
+    </div>
+    <p class="text-center p-3 italic">You can search by airport name, city or country</p>
+
+    <div class="input-container">
+      <input type="text" id="search" class="input" placeholder="At least 2 letters" />
+
+      <button class="btn" id="btn" disabled="disabled">
+        Search</button>
+    </div>
+
+    <div id="map"></div>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
